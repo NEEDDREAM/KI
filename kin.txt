@@ -13,10 +13,8 @@ hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,ad
 ^https?:\/\/adservice\.sigmob\.cn\/extconfig url response-body false response-body true
 
 # > 追书神器
-# hostname = adx-cn.anythinktech.com,api.anythinktech.com,b.zhuishushenqi.com
+# hostname = adx-cn.anythinktech.com,api.anythinktech.com
 ^https?:\/\/adx-cn\.anythinktech\.com\/bid url reject-200
-^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
-^https?+:\/\/api\.anythinktech.com\.com\/splashes\/ios url reject-200
-^https?+:\/\/api\.anythinktech.com\.com\/notification\/shelfMessage url reject-200
-^https?+:\/\/api\.anythinktech.com\.com\/user\/bookshelf-updated url reject-200
-^https?+:\/\/itunes\.apple\.com\/lookup\?id=575826903 url reject-200
+^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage url reject
+^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject
+^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated url reject
