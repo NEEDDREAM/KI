@@ -15,6 +15,6 @@ hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,ad
 # > 追书神器
 # hostname = adx-cn.anythinktech.com
 ^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
-^https?+:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject-200
-^https?+:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage url reject-200
-^https?+:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated url reject-200
+^https?+:\/\/api\.anythinktech.com\.com\/splashes\/ios url reject-200
+^https?+:\/\/api\.anythinktech.com\.com\/notification\/shelfMessage url reject-200
+^https?+:\/\/api\.anythinktech.com\.com\/user\/bookshelf-updated url reject-200
