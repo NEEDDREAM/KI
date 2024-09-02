@@ -1,7 +1,7 @@
 #!name=广告拦截合集-重写
 #!desc=(R)针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,adx-cn.anythinktech.com
+hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,adx-cn.anythinktech.com,api.zhuishushenqi.com,b.zhuishushenqi.com
 
 
 # > 大师兄
@@ -13,7 +13,8 @@ hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,ad
 ^https?:\/\/adservice\.sigmob\.cn\/extconfig url response-body false response-body true
 
 # > 追书神器
-# hostname = adx-cn.anythinktech.com
+# hostname = adx-cn.anythinktech.com,api.anythinktech.com,b.zhuishushenqi.com
+^https?:\/\/adx-cn\.anythinktech\.com\/bid url reject-200
 ^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
 ^https?+:\/\/api\.anythinktech.com\.com\/splashes\/ios url reject-200
 ^https?+:\/\/api\.anythinktech.com\.com\/notification\/shelfMessage url reject-200
