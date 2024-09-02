@@ -18,3 +18,4 @@ hostname = sdk.alibaba.com.ailbaba.me,adservice.sigmob.cn,adservice.sigmob.cn,ad
 ^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage url reject
 ^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject
 ^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated url reject
+^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
